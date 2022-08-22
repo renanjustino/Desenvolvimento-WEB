@@ -1,0 +1,53 @@
+CREATE TABLE Funcionario(
+id int AUTO_INCREMENT PRIMARY KEY, 
+cpf varchar(11),
+nome varchar(30),
+datain date,
+email varchar(30),
+senha varchar(128),
+celular varchar(15),
+telefone varchar(15),
+endereco varchar(30),
+telcontato varchar(15),
+salario int,
+cargo varchar(20)
+);
+
+CREATE TABLE Cliente(
+id int AUTO_INCREMENT PRIMARY KEY,
+cpf varchar(15),
+nome varchar(30),
+datanasc date,
+estadocivil varchar(10),
+sexo varchar(10),
+email varchar(30),
+senha varchar(128),
+celular varchar(15),
+telefone varchar(15),
+rua varchar(30),
+logradouro varchar(10),
+numero int,
+bairro varchar(10),
+cep varchar(15),
+cidade varchar(30),
+estado varchar(30)
+);
+
+create table Imovel(
+id int primary key AUTO_INCREMENT,
+disponibilidade varchar(30),
+bairro varchar(30), 
+vlrimovel int, 
+proprietario varchar(30), 
+tipo varchar(30),
+area int,  
+codprop int UNIQUE, 
+quartos int,
+suites int,
+detalhes text,
+piscinasimcasa varchar(30), 
+piscinanaocasa varchar(30),  
+numap int,
+andar int, 
+valorcon int, 
+); 
